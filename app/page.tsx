@@ -4,7 +4,7 @@ import { Hero } from "@/components/sections/hero"
 import { Problemas } from "@/components/sections/problemas"
 import { ParaQuem } from "@/components/sections/para-quem"
 import { Funcionalidades } from "@/components/sections/funcionalidades"
-import { Screenshots } from "@/components/sections/screenshots"
+
 import { Diferenciais } from "@/components/sections/diferenciais"
 import { Stack } from "@/components/sections/stack"
 import { FaqSection } from "@/components/sections/faq-section"
@@ -15,7 +15,6 @@ import {
   doresContent,
   personasContent,
   funcionalidadesContent,
-  screenshotsContent,
   diferenciaisContent,
   stackContent,
   faqContent,
@@ -49,13 +48,6 @@ export default function LandingPage() {
           title="O que o SEIVA entrega"
           intro="Módulos que cobrem o ciclo completo da assistência social — da rede de unidades ao RMA automatizado."
           features={funcionalidadesContent}
-        />
-
-        <Screenshots
-          eyebrow="Na prática"
-          title="Como o SEIVA se parece"
-          intro="Telas reais do sistema em operação. Dados de exemplo com unidades, famílias e atendimentos verossímeis."
-          screenshots={screenshotsContent}
         />
 
         <Diferenciais
