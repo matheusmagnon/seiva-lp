@@ -1,0 +1,161 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ═══════════════════════════════════════════════
+   SEIVA — Landing Page
+   Direção F "produto calmo" — Tokens de design
+   ═══════════════════════════════════════════════ */
+
+:root {
+  /* ── Paleta F (do globals.css do sistema) ── */
+  --brand: #4763B8;
+  --brand-dark: #33509E;
+  --brand-soft: #E9EDF8;
+  --brand-ink: #33427C;
+
+  /* ── Superfícies ── */
+  --bg: 220 20% 97%;          /* #F3F5F9 */
+  --side: 220 17% 94%;        /* #EBEEF4 */
+  --card: 0 0% 100%;          /* #FFFFFF */
+
+  /* ── Texto ── */
+  --ink: 211 22% 19%;         /* #26303B */
+  --ink-2: 212 13% 42%;       /* #5F6B78 */
+  --ink-3: 210 13% 63%;       /* #93A0AD */
+
+  /* ── Bordas ── */
+  --line: 216 23% 92%;        /* #E6EAF0 */
+  --hair: 210 20% 95%;        /* #EFF2F6 */
+
+  /* ── Semânticos ── */
+  --good: 144 44% 34%;        /* #2E7D42 */
+  --good-soft: 143 28% 92%;   /* #E4F1E7 */
+  --warn: 42 82% 32%;         /* #96660D */
+  --warn-soft: 43 67% 91%;    /* #F7EDD8 */
+  --crit: 4 57% 44%;          /* #B3362B */
+  --crit-soft: 4 59% 94%;     /* #F9E7E4 */
+
+  /* ── Tokens shadcn mapeados para a paleta F ── */
+  --radius: 10px;
+  --background: var(--card);
+  --foreground: var(--ink);
+  --card: var(--card);
+  --card-foreground: var(--ink);
+  --popover: var(--card);
+  --popover-foreground: var(--ink);
+  --primary: 226 43% 49%;     /* #4763B8 */
+  --primary-foreground: 0 0% 100%;
+  --secondary: var(--side);
+  --secondary-foreground: var(--ink-2);
+  --muted: var(--side);
+  --muted-foreground: var(--ink-3);
+  --accent: var(--side);
+  --accent-foreground: var(--ink);
+  --destructive: var(--crit);
+  --border: var(--line);
+  --input: var(--line);
+  --ring: 226 43% 49%;        /* #4763B8 */
+
+  /* ── Type scale (ratio 1.25, base 16px, fluido em headings) ── */
+  --text-caption: 0.75rem;    /* 12px */
+  --text-small: 0.875rem;     /* 14px */
+  --text-body: 1rem;          /* 16px */
+  --text-lead: 1.125rem;      /* 18px */
+  --text-h4: clamp(1.125rem, 1.05rem + 0.35vw, 1.25rem);
+  --text-h3: clamp(1.375rem, 1.2rem + 0.8vw, 1.625rem);
+  --text-h2: clamp(1.75rem, 1.45rem + 1.4vw, 2.25rem);
+  --text-h1: clamp(2.25rem, 1.75rem + 2.2vw, 3rem);
+}
+
+html {
+  font-size: 16px;
+  -webkit-text-size-adjust: 100%;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+body {
+  font-family: var(--font-manrope), 'Seravek', 'Avenir Next', system-ui, sans-serif;
+  font-size: var(--text-body);
+  line-height: 1.6;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Section anchor offset (sticky header) */
+:where(section, article, div)[id] {
+  scroll-margin-top: 5rem;
+}
+
+/* Headings: font weight variations, tight leading, balanced text */
+:where(h1, h2, h3, h4) {
+  font-family: var(--font-manrope), 'Seravek', 'Avenir Next', system-ui, sans-serif;
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+  text-wrap: balance;
+}
+
+/* Body paragraphs: comfortable measure */
+:where(p) {
+  max-width: 70ch;
+  text-wrap: pretty;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* ── WhatsApp FAB pulse ── */
+.whatsapp-fab {
+  position: fixed;
+  isolation: isolate;
+}
+
+.whatsapp-fab::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background-color: #25D366;
+  z-index: -1;
+  opacity: 0.5;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .whatsapp-fab::before {
+    animation: whatsapp-ring 2s ease-out infinite;
+  }
+}
+
+@keyframes whatsapp-ring {
+  0% {
+    transform: scale(1);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(1.6);
+    opacity: 0;
+  }
+}
