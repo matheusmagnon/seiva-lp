@@ -1,11 +1,11 @@
 import type { Metadata } from "next"
-import { Manrope } from "next/font/google"
+import { Work_Sans } from "next/font/google"
 import "./globals.css"
 
-const manrope = Manrope({
+const workSans = Work_Sans({
   subsets: ["latin", "latin-ext"],
   weight: ["400", "500", "600", "700", "800"],
-  variable: "--font-manrope",
+  variable: "--font-work-sans",
   display: "swap",
 })
 
@@ -63,7 +63,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="pt-BR" className={manrope.variable}>
+    <html lang="pt-BR" className={workSans.variable}>
       <body className="font-sans antialiased">
         <a
           href="#main"

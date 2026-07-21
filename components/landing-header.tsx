@@ -1,6 +1,7 @@
 "use client"
 
 import Link from "next/link"
+import Image from "next/image"
 import { Menu, X } from "lucide-react"
 import { useState } from "react"
 
@@ -23,12 +24,10 @@ export function LandingHeader() {
           {/* Logo */}
           <Link
             href="/"
-            className="flex items-center gap-2.5 font-bold text-lg text-ink shrink-0"
+            className="flex items-center gap-2.5 shrink-0"
           >
-            <span className="w-8 h-8 rounded-[10px] bg-brand flex items-center justify-center text-white text-sm font-extrabold">
-              S
-            </span>
-            SEIVA
+            <Image src="/symbol.svg" alt="SEIVA" width={32} height={32} className="w-8 h-8" />
+            <span className="font-bold text-lg text-[#33427C]">SEIVA</span>
           </Link>
 
           {/* Desktop nav */}

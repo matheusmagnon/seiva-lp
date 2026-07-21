@@ -91,7 +91,7 @@ html {
 }
 
 body {
-  font-family: var(--font-manrope), 'Seravek', 'Avenir Next', system-ui, sans-serif;
+  font-family: var(--font-work-sans), 'Seravek', 'Avenir Next', system-ui, sans-serif;
   font-size: var(--text-body);
   line-height: 1.6;
   text-rendering: optimizeLegibility;
@@ -106,7 +106,7 @@ body {
 
 /* Headings: font weight variations, tight leading, balanced text */
 :where(h1, h2, h3, h4) {
-  font-family: var(--font-manrope), 'Seravek', 'Avenir Next', system-ui, sans-serif;
+  font-family: var(--font-work-sans), 'Seravek', 'Avenir Next', system-ui, sans-serif;
   line-height: 1.15;
   letter-spacing: -0.01em;
   text-wrap: balance;

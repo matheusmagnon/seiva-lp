@@ -1,4 +1,5 @@
 import Link from "next/link"
+import Image from "next/image"
 
 export function LandingFooter() {
   return (
@@ -8,12 +9,10 @@ export function LandingFooter() {
           <div className="col-span-2 md:col-span-1">
             <Link
               href="/"
-              className="flex items-center gap-2.5 font-bold text-lg text-ink mb-4"
+              className="flex items-center gap-2.5 mb-4"
             >
-              <span className="w-8 h-8 rounded-[10px] bg-brand flex items-center justify-center text-white text-sm font-extrabold">
-                S
-              </span>
-              SEIVA
+              <Image src="/symbol.svg" alt="SEIVA" width={32} height={32} className="w-8 h-8" />
+              <span className="font-bold text-lg text-[#33427C]">SEIVA</span>
             </Link>
             <p className="text-caption text-ink-2">
               SaaS de gestão de pessoas, atendimentos e agenda para prefeituras

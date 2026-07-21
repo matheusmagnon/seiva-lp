@@ -80,7 +80,7 @@ const config: Config = {
         },
       },
       fontFamily: {
-        sans: ["var(--font-manrope)", "Seravek", "Avenir Next", "system-ui", "sans-serif"],
+        sans: ["var(--font-work-sans)", "system-ui", "sans-serif"],
       },
       fontSize: {
         caption: ["var(--text-caption)", { lineHeight: "1.4" }],
