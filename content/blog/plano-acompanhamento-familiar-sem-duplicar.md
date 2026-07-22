@@ -4,6 +4,7 @@ description: "Como estruturar o Plano de Acompanhamento Familiar (PAF) referenci
 date: "2026-06-08"
 slug: "plano-acompanhamento-familiar-sem-duplicar"
 category: "registros"
+icon: "ClipboardCheck"
 keywords: ["plano de acompanhamento familiar", "paf suas", "prontuário suas", "duplicação de registro", "retrabalho paif", "gestão de casos"]
 ---
 

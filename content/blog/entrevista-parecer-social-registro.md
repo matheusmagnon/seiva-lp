@@ -4,6 +4,7 @@ description: "Como estruturar o registro da entrevista social e do parecer socia
 date: "2026-06-11"
 slug: "entrevista-parecer-social-registro"
 category: "registros"
+icon: "MessageSquare"
 keywords: ["entrevista social", "parecer social", "registro suas", "prontuário família", "assistente social", "instrumentos técnicos suas"]
 ---
 

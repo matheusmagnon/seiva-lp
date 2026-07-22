@@ -4,6 +4,7 @@ description: "Como transformar registros de atendimento, RMA e indicadores de vi
 date: "2026-06-14"
 slug: "pmas-dados-dia-a-dia"
 category: "gestao-suas"
+icon: "Landmark"
 keywords: ["pmas", "plano municipal de assistência social", "planejamento suas", "diagnóstico socioterritorial", "cmas", "gestão da assistência social"]
 ---
 

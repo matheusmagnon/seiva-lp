@@ -4,6 +4,7 @@ description: "Como estruturar o relatório de gestão apresentado ao CMAS e à C
 date: "2026-06-17"
 slug: "relatorio-gestao-suas-sem-retrabalho"
 category: "gestao-suas"
+icon: "FileBarChart"
 keywords: ["relatório de gestão suas", "prestação de contas assistência social", "cmas", "loas", "gestão suas", "indicadores suas"]
 ---
 

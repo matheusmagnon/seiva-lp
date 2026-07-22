@@ -4,6 +4,7 @@ description: "Entenda os pilares da Norma Operacional Básica do SUAS e como imp
 date: "2026-07-04"
 slug: "nob-suas-na-pratica"
 category: "gestao-suas"
+icon: "Scale"
 keywords: ["nob-suas", "norma operacional básica", "gestão suas", "diretrizes sus", "territorialidade", "descentralização suas"]
 ---
 

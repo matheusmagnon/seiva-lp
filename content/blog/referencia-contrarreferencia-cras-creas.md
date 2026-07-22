@@ -4,6 +4,7 @@ description: "O que significam referência e contrarreferência no SUAS e como e
 date: "2026-06-03"
 slug: "referencia-contrarreferencia-cras-creas"
 category: "cras-paif"
+icon: "ArrowLeftRight"
 keywords: ["referência e contrarreferência suas", "fluxo cras creas", "encaminhamento cras creas", "contrarreferência suas", "matricialidade sociofamiliar", "rede socioassistencial"]
 ---
 

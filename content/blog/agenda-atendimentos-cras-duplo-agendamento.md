@@ -4,6 +4,7 @@ description: "Como organizar a agenda de atendimentos do CRAS para evitar duplo 
 date: "2026-06-15"
 slug: "agenda-atendimentos-cras-duplo-agendamento"
 category: "operacao"
+icon: "CalendarClock"
 keywords: ["agenda cras", "duplo agendamento", "agendamento de atendimento", "ociosidade equipe técnica", "gestão de agenda", "suas"]
 ---
 

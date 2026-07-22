@@ -4,6 +4,7 @@ description: "O RMA é obrigatório, mas não basta para gerir o CRAS. Veja quai
 date: "2026-06-19"
 slug: "indicadores-cras-alem-do-rma"
 category: "gestao-suas"
+icon: "TrendingUp"
 keywords: ["indicadores cras", "gestão do cras", "vigilância socioassistencial", "cobertura territorial", "indicadores suas", "rma"]
 ---
 

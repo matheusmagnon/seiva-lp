@@ -4,6 +4,7 @@ description: "Entenda a diferença entre Censo SUAS e CadSUAS, o que cada instru
 date: "2026-06-13"
 slug: "censo-suas-cadsuas-durante-o-ano"
 category: "gestao-suas"
+icon: "Database"
 keywords: ["censo suas", "cadsuas", "gestão suas", "rma", "nob-rh suas", "cofinanciamento suas", "preenchimento censo suas"]
 ---
 

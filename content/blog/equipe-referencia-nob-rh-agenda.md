@@ -4,6 +4,7 @@ description: "O que a NOB-RH/SUAS define sobre a equipe de referência do CRAS e
 date: "2026-06-10"
 slug: "equipe-referencia-nob-rh-agenda"
 category: "gestao-suas"
+icon: "UserCog"
 keywords: ["nob-rh suas", "equipe de referência", "agenda cras", "gestão de pessoas suas", "dimensionamento de equipe", "organização do cras"]
 ---
 

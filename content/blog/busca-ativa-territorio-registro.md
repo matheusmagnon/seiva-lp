@@ -4,6 +4,7 @@ description: "Como estruturar a busca ativa no território de abrangência do CR
 date: "2026-06-02"
 slug: "busca-ativa-territorio-registro"
 category: "cras-paif"
+icon: "Search"
 keywords: ["busca ativa suas", "busca ativa cras", "busca ativa território", "registro de busca ativa", "vigilância socioassistencial", "cadastro único busca ativa"]
 ---
 

@@ -4,6 +4,7 @@ description: "Entenda o que é acolhida qualificada no CRAS, como estruturar ess
 date: "2026-07-18"
 slug: "acolhida-no-cras"
 category: "cras-paif"
+icon: "HeartHandshake"
 keywords: ["acolhida qualificada", "primeiro atendimento cras", "escuta ativa", "atendimento integral família", "acompanhamento paif", "prontuário família"]
 ---
 

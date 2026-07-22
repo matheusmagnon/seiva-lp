@@ -4,6 +4,7 @@ description: "Compare prontuário em papel versus prontuário digital: seguranç
 date: "2026-07-08"
 slug: "prontuario-eletronico-suas"
 category: "registros"
+icon: "Laptop"
 keywords: ["prontuário digital", "prontuário eletrônico suas", "papel versus tecnologia", "segurança dados famílias", "continuidade acompanhamento", "eficiência administrativa"]
 ---
 

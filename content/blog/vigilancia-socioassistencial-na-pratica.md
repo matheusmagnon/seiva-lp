@@ -4,6 +4,7 @@ description: "O que é vigilância socioassistencial, quais indicadores o CRAS d
 date: "2026-06-04"
 slug: "vigilancia-socioassistencial-na-pratica"
 category: "gestao-suas"
+icon: "Radar"
 keywords: ["vigilância socioassistencial", "indicadores suas", "gestão suas", "diagnóstico socioterritorial", "rma", "vulnerabilidade social", "monitoramento cras"]
 ---
 

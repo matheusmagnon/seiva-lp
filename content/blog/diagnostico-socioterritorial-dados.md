@@ -4,6 +4,7 @@ description: "Por que o diagnóstico socioterritorial costuma ficar espalhado en
 date: "2026-06-06"
 slug: "diagnostico-socioterritorial-dados"
 category: "gestao-suas"
+icon: "Map"
 keywords: ["diagnóstico socioterritorial", "territorialidade", "gestão suas", "cadúnico", "vigilância socioassistencial", "plano municipal de assistência social"]
 ---
 

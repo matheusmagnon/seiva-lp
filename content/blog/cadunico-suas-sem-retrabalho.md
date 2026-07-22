@@ -4,6 +4,7 @@ description: "Entenda a diferença entre CadÚnico e os registros do SUAS, por q
 date: "2026-06-05"
 slug: "cadunico-suas-sem-retrabalho"
 category: "operacao"
+icon: "Link2"
 keywords: ["cadúnico", "cadastro único", "suas", "retrabalho", "cadsuas", "integração de dados", "cras"]
 ---
 
