@@ -27,19 +27,24 @@ export function LandingFooter() {
             </h2>
             <ul className="space-y-2 text-small">
               <li>
-                <a href="#funcionalidades" className="text-ink-2 hover:text-brand transition-colors">
+                <a href="/#funcionalidades" className="text-ink-2 hover:text-brand transition-colors">
                   Funcionalidades
                 </a>
               </li>
               <li>
-                <a href="#para-quem" className="text-ink-2 hover:text-brand transition-colors">
+                <a href="/#para-quem" className="text-ink-2 hover:text-brand transition-colors">
                   Para quem
                 </a>
               </li>
               <li>
-                <a href="#diferenciais" className="text-ink-2 hover:text-brand transition-colors">
+                <a href="/#diferenciais" className="text-ink-2 hover:text-brand transition-colors">
                   Diferenciais
                 </a>
+              </li>
+              <li>
+                <Link href="/blog" className="text-ink-2 hover:text-brand transition-colors">
+                  Blog
+                </Link>
               </li>
             </ul>
           </nav>
@@ -50,12 +55,12 @@ export function LandingFooter() {
             </h2>
             <ul className="space-y-2 text-small">
               <li>
-                <a href="#faq" className="text-ink-2 hover:text-brand transition-colors">
+                <a href="/#faq" className="text-ink-2 hover:text-brand transition-colors">
                   FAQ
                 </a>
               </li>
               <li>
-                <a href="#contato" className="text-ink-2 hover:text-brand transition-colors">
+                <a href="/#contato" className="text-ink-2 hover:text-brand transition-colors">
                   Fale com a gente
                 </a>
               </li>
