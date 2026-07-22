@@ -4,6 +4,7 @@ description: "Aprenda a estratégia para preencher o Registro Mensal de Atendime
 date: "2026-07-12"
 slug: "como-preencher-rma-sem-retrabalho"
 category: "registros"
+icon: "ClipboardList"
 keywords: ["rma registro mensal atendimentos", "preenchimento rma", "consolidação dados", "censo suas", "retrabalho administrativo", "sistema suas"]
 ---
 

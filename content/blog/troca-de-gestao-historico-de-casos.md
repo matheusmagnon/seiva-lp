@@ -4,6 +4,7 @@ description: "Como preparar a assistência social municipal para trocas de coord
 date: "2026-06-18"
 slug: "troca-de-gestao-historico-de-casos"
 category: "operacao"
+icon: "RefreshCw"
 keywords: ["troca de gestão", "continuidade suas", "histórico de casos", "transição municipal", "memória institucional", "assistência social"]
 ---
 

@@ -4,6 +4,7 @@ description: "Como a LGPD se aplica ao dado de família acompanhada pelo SUAS, o
 date: "2026-06-16"
 slug: "lgpd-no-suas-protecao-dados"
 category: "operacao"
+icon: "ShieldCheck"
 keywords: ["lgpd suas", "proteção de dados", "dado sensível", "prontuário suas", "sigilo profissional", "assistência social", "lei geral de proteção de dados"]
 ---
 

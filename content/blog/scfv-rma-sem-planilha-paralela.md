@@ -4,6 +4,7 @@ description: "Como a frequência dos grupos do SCFV deve alimentar o RMA diretam
 date: "2026-06-12"
 slug: "scfv-rma-sem-planilha-paralela"
 category: "registros"
+icon: "ListChecks"
 keywords: ["scfv frequência", "rma scfv", "registro mensal de atendimentos", "grupos de convivência", "planilha paralela", "frequência grupos cras"]
 ---
 

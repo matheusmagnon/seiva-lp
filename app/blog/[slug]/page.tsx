@@ -4,7 +4,8 @@ import { notFound } from "next/navigation"
 import { Calendar, Clock, ArrowLeft, ArrowRight } from "lucide-react"
 import { LandingHeader } from "@/components/landing-header"
 import { LandingFooter } from "@/components/landing-footer"
-import { getPosts, getPost, CATEGORY_LABELS } from "@/lib/blog"
+import { PostCover } from "@/components/post-cover"
+import { getPosts, getPost } from "@/lib/blog"
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://seiva.app"
 
@@ -105,10 +106,19 @@ export default async function PostPage({ params }: Props) {
             <span className="text-ink line-clamp-1">{post.title}</span>
           </nav>
 
+          <PostCover
+            variant="hero"
+            category={post.category}
+            icon={post.icon}
+            className="mb-8"
+          />
+
           <div className="mb-8">
-            <span className="inline-flex w-fit items-center px-2.5 py-1 rounded-[10px] bg-brand-soft text-brand text-caption font-semibold mb-4">
-              {CATEGORY_LABELS[post.category]}
-            </span>
+            {/*
+              O badge de categoria que existia aqui foi removido: a capa
+              acima já exibe o rótulo da categoria, então mantê-lo repetiria
+              a mesma informação a poucos pixels de distância.
+            */}
             <h1 className="text-h1 font-bold text-ink leading-tight mb-3">{post.title}</h1>
             <p className="text-ink-2 text-body mb-4">{post.description}</p>
             <div className="flex items-center gap-4 text-caption text-ink-2">

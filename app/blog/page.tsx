@@ -3,6 +3,7 @@ import Link from "next/link"
 import { Calendar, Clock, ArrowLeft, ArrowRight } from "lucide-react"
 import { LandingHeader } from "@/components/landing-header"
 import { LandingFooter } from "@/components/landing-footer"
+import { PostCover } from "@/components/post-cover"
 import { getPosts, CATEGORY_LABELS, type Category } from "@/lib/blog"
 
 export const metadata: Metadata = {
@@ -147,10 +148,8 @@ export default async function BlogPage({ searchParams }: Props) {
                     href={`/blog/${post.slug}`}
                     className="group flex flex-col rounded-[10px] border border-[#E6EAF0] bg-white overflow-hidden hover:border-brand/40 hover:shadow-[0_1px_2px_rgba(30,40,60,0.05)] transition-all"
                   >
+                    <PostCover variant="card" category={post.category} icon={post.icon} />
                     <div className="p-5 flex flex-col flex-grow">
-                      <span className="inline-flex w-fit items-center px-2.5 py-1 rounded-[10px] bg-brand-soft text-brand text-caption font-semibold mb-3">
-                        {CATEGORY_LABELS[post.category]}
-                      </span>
                       <h2 className="font-semibold text-body leading-snug mb-2 text-ink group-hover:text-brand transition-colors line-clamp-3">
                         {post.title}
                       </h2>

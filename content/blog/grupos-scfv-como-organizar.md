@@ -4,6 +4,7 @@ description: "Aprenda a estruturar grupos de Serviço de Convivência e Fortalec
 date: "2026-07-16"
 slug: "grupos-scfv-como-organizar"
 category: "cras-paif"
+icon: "UsersRound"
 keywords: ["scfv grupos", "fortalecimento de vínculos", "convivência social", "frequência grupos", "registro de grupos", "atividades cras"]
 ---
 

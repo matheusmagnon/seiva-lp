@@ -4,6 +4,7 @@ description: "Diferenças entre escuta especializada e escuta protegida no SUAS,
 date: "2026-06-09"
 slug: "escuta-especializada-protegida-registro"
 category: "cras-paif"
+icon: "Ear"
 keywords: ["escuta especializada", "escuta protegida", "lei 13.431", "escuta de criança e adolescente", "depoimento especial", "registro suas violência"]
 ---
 

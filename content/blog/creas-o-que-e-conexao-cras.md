@@ -4,6 +4,7 @@ description: "O que é o CREAS, quais situações justificam abrir um caso e com
 date: "2026-06-20"
 slug: "creas-o-que-e-conexao-cras"
 category: "cras-paif"
+icon: "Building"
 keywords: ["o que é creas", "creas e cras", "proteção social especial", "paefi", "quando abrir caso creas", "média complexidade suas"]
 ---
 

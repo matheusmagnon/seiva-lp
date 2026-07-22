@@ -23,6 +23,7 @@ export type Post = {
   keywords: string[]
   readingTime: string
   category: Category
+  icon?: string
   contentHtml: string
 }
 
@@ -57,6 +58,7 @@ export function getPosts(): PostMeta[] {
         keywords: (data.keywords as string[]) ?? [],
         readingTime: formatReadingTime(content),
         category: (data.category as Category) ?? "gestao-suas",
+        icon: data.icon as string | undefined,
       }
     })
     .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
@@ -90,6 +92,7 @@ export async function getPost(slug: string): Promise<Post | null> {
     keywords: (data.keywords as string[]) ?? [],
     readingTime: formatReadingTime(content),
     category: (data.category as Category) ?? "gestao-suas",
+    icon: data.icon as string | undefined,
     contentHtml: processed.toString(),
   }
 }

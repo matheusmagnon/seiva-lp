@@ -4,6 +4,7 @@ description: "Entenda a diferença entre PIA (Plano Individual de Atendimento) e
 date: "2026-06-07"
 slug: "pia-e-paf-diferenca"
 category: "registros"
+icon: "Files"
 keywords: ["pia plano individual de atendimento", "paf plano de acompanhamento familiar", "instrumentos suas", "acompanhamento familiar", "medida socioeducativa", "acolhimento institucional"]
 ---
 

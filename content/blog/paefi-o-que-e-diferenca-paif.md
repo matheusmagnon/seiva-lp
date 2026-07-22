@@ -4,6 +4,7 @@ description: "Entenda o que é o PAEFI, em que ele se diferencia do PAIF e como 
 date: "2026-06-01"
 slug: "paefi-o-que-e-diferenca-paif"
 category: "cras-paif"
+icon: "Shield"
 keywords: ["o que é paefi", "paefi e paif", "diferença entre paif e paefi", "proteção social especial", "creas", "violação de direitos suas"]
 ---
 

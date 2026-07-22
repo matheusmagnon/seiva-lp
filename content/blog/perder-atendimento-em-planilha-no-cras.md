@@ -4,6 +4,7 @@ description: "Identifique por que atendimentos ficam invisíveis em planilhas pa
 date: "2026-07-21"
 slug: "perder-atendimento-em-planilha-no-cras"
 category: "operacao"
+icon: "FileWarning"
 keywords: ["planilha versus sistema", "atendimento invisível", "perda de dados", "desorganização cras", "fragmentação registro", "eficiência operacional"]
 ---
 

@@ -4,6 +4,7 @@ description: "Entenda como o Índice de Gestão Descentralizada (IGD) é calcula
 date: "2026-06-30"
 slug: "igd-e-cofinanciamento"
 category: "gestao-suas"
+icon: "Coins"
 keywords: ["igd", "índice gestão descentralizada", "cofinanciamento sus", "transferência de recursos", "rma e financiamento", "repasse federal municípios"]
 ---
 

@@ -4,6 +4,7 @@ description: "Entenda o que é o CRAS, qual o papel do PAIF na proteção social
 date: "2026-07-10"
 slug: "o-que-e-cras-como-funciona-paif"
 category: "cras-paif"
+icon: "Building2"
 keywords: ["o que é o cras", "paif", "cras e paif", "proteção social básica", "assistência social municipal", "sistema único de assistência social"]
 ---
 

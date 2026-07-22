@@ -4,6 +4,7 @@ description: "Avalie os limites da planilha na gestão do SUAS, entenda os custo
 date: "2026-07-20"
 slug: "planilha-vs-sistema-especializado-suas"
 category: "operacao"
+icon: "Table2"
 keywords: ["planilha excel cras", "sistema especializado suas", "tecnologia assistência social", "custo benefício migração", "eficiência operacional", "gestão dados"]
 ---
 

@@ -4,6 +4,7 @@ description: "Entenda a estrutura do prontuário no SUAS, quais informações s�
 date: "2026-07-14"
 slug: "prontuario-suas-o-que-e"
 category: "registros"
+icon: "FileText"
 keywords: ["prontuário suas", "prontuário família", "registro atendimento", "dados estruturados", "vigilância socioassistencial", "rma e prontuário"]
 ---
 
