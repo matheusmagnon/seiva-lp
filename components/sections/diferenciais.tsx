@@ -21,11 +21,8 @@ export function Diferenciais({
   diferenciais,
 }: DiferenciaisProps) {
   return (
-    <section
-      id="diferenciais"
-      className="max-w-6xl mx-auto px-4 py-20 md:py-28"
-    >
-      <div className="text-center mb-14">
+    <section className="max-w-6xl mx-auto px-4 py-20 md:py-28">
+      <div id="diferenciais" className="text-center mb-14">
         <div className="flex justify-center">
           <Eyebrow>{eyebrow}</Eyebrow>
         </div>

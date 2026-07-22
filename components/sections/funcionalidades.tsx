@@ -22,11 +22,8 @@ export function Funcionalidades({
   features,
 }: FuncionalidadesProps) {
   return (
-    <section
-      id="funcionalidades"
-      className="max-w-6xl mx-auto px-4 py-20 md:py-28"
-    >
-      <div className="text-center mb-14">
+    <section className="max-w-6xl mx-auto px-4 py-20 md:py-28">
+      <div id="funcionalidades" className="text-center mb-14">
         <div className="flex justify-center">
           <Eyebrow>{eyebrow}</Eyebrow>
         </div>
@@ -34,7 +31,7 @@ export function Funcionalidades({
         <p className="text-lead text-ink-2 max-w-2xl mx-auto">{intro}</p>
       </div>
 
-      <div className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+      <div className="grid sm:grid-cols-2 xl:grid-cols-3 gap-6 max-w-6xl mx-auto items-start">
         {features.map((feature) => {
           const Icon = feature.icon
           return (

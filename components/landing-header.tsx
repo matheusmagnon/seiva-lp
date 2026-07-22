@@ -32,10 +32,15 @@ export function LandingHeader() {
           {/* Logo */}
           <Link
             href="/"
-            className="flex items-center gap-2.5 shrink-0"
+            className="flex flex-col justify-center shrink-0"
           >
-            <Image src="/symbol.svg" alt="SEIVA" width={32} height={32} className="w-8 h-8" />
-            <span className="font-bold text-lg text-[#33427C]">SEIVA</span>
+            <span className="flex items-center gap-2.5">
+              <Image src="/symbol.svg" alt="SEIVA" width={32} height={32} className="w-8 h-8" />
+              <span className="font-bold text-lg text-[#33427C]">SEIVA</span>
+            </span>
+            <span className="hidden lg:block whitespace-nowrap mt-0.5 text-caption text-ink-3 leading-tight">
+              Sistema Eletrônico de Informação para Vigilância Assistencial
+            </span>
           </Link>
 
           {/* Desktop nav */}

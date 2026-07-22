@@ -18,6 +18,10 @@ import {
   Gift,
   UserCog,
   Eye,
+  HeartHandshake,
+  CalendarCheck2,
+  Lock,
+  Link2,
 } from "lucide-react"
 import type { LucideIcon } from "lucide-react"
 
@@ -41,28 +45,28 @@ export const heroContent = {
 
 export const doresContent = [
   {
-    dor: "Cada CRAS e CREAS mantem sua propria planilha — e ninguem consegue consolidar os dados do municipio.",
+    dor: "Cada CRAS e CREAS mantém sua própria planilha — e ninguém consegue consolidar os dados do município.",
     categoria: "Duplicidade",
   },
   {
-    dor: "A familia atendida no CRAS e encaminhada ao CREAS precisa recontar toda a historia — nao ha prontuario unificado.",
-    categoria: "Falta de integracao",
+    dor: "A família atendida no CRAS e encaminhada ao CREAS precisa recontar toda a história — não há prontuário unificado.",
+    categoria: "Falta de integração",
   },
   {
-    dor: "O RMA mensal e montado manualmente, copiando e colando dados de planilhas — horas de trabalho todo mes.",
-    categoria: "Dificuldade em relatorios",
+    dor: "O RMA mensal é montado manualmente, copiando e colando dados de planilhas — horas de trabalho todo mês.",
+    categoria: "Dificuldade em relatórios",
   },
   {
-    dor: "Dados sensiveis de familias em situacao de vulnerabilidade ficam em planilhas soltas, sem controle de acesso nem trilha de auditoria.",
+    dor: "Dados sensíveis de famílias em situação de vulnerabilidade ficam em planilhas soltas, sem controle de acesso nem trilha de auditoria.",
     categoria: "Fragilidade LGPD",
   },
   {
-    dor: "Quando o Ministerio Publico ou o TCE pedem informacao, a equipe corre para juntar papeis e planilhas — dias de trabalho.",
+    dor: "Quando o Ministério Público ou o TCE pedem informação, a equipe corre para juntar papéis e planilhas — dias de trabalho.",
     categoria: "Morosidade no controle",
   },
   {
-    dor: "A vigilancia socioassistencial trabalha no escuro — sem dados consolidados para identificar territorios com maior incidencia de violacoes.",
-    categoria: "Vigilancia sem dados",
+    dor: "A vigilância socioassistencial trabalha no escuro — sem dados consolidados para identificar territórios com maior incidência de violações.",
+    categoria: "Vigilância sem dados",
   },
 ]
 
@@ -77,27 +81,27 @@ export const personasContent: {
 }[] = [
   {
     icon: UserCheck,
-    title: "Tecnico de CRAS / CREAS",
+    title: "Técnico de CRAS / CREAS",
     description:
-      "Registra atendimentos, atualiza o prontuario familiar e encaminha para a rede — tudo no mesmo sistema, sem Planilhao paralelo.",
+      "Registra atendimentos, atualiza o prontuário familiar e encaminha para a rede — tudo no mesmo sistema, sem Planilhão paralelo.",
   },
   {
     icon: UserCog,
-    title: "Coordenacao do SUAS",
+    title: "Coordenação do SUAS",
     description:
-      "Acompanha indicadores da equipe, fecha o RMA com um clique e responde a orgaos de controle com dados consolidados e trilha de auditoria.",
+      "Acompanha indicadores da equipe, fecha o RMA com um clique e responde a órgãos de controle com dados consolidados e trilha de auditoria.",
   },
   {
     icon: Eye,
-    title: "Vigilancia Socioassistencial",
+    title: "Vigilância Socioassistencial",
     description:
-      "Cruza dados de atendimento, perfil das familias e territorio para identificar violacoes e orientar a politica publica com evidencia.",
+      "Cruza dados de atendimento, perfil das famílias e território para identificar violações e orientar a política pública com evidência.",
   },
   {
     icon: Building2,
-    title: "Gestao SEDES / TI municipal",
+    title: "Gestão SEDES / TI municipal",
     description:
-      "Um sistema unico para toda a rede, com banco isolado, atualizacoes automaticas e zero infraestrutura para manter — 100% web.",
+      "Um sistema único para toda a rede, com banco isolado, atualizações automáticas e zero infraestrutura para manter — 100% web.",
   },
 ]
 
@@ -116,21 +120,19 @@ export const funcionalidadesContent: {
     icon: Building2,
     title: "Rede socioassistencial",
     items: [
-      "Cadastro de unidades (CRAS, CREAS, Centro POP, acolhimento)",
-      "Equipes e vinculos de profissionais",
-      "Parametrizacao de servicos tipificados por unidade",
-      "Visao consolidada da rede municipal",
+      "Mapa completo de CRAS, CREAS, Centro POP e unidades de acolhimento",
+      "Controle de acesso por unidade e por servidor",
+      "Visão consolidada da rede em toda a prefeitura",
     ],
   },
   {
     id: "cadastro",
     icon: Users,
-    title: "Cadastro e prontuario familiar",
+    title: "Cadastro e prontuário familiar",
     items: [
-      "Prontuario unico por familia com historico versionado",
-      "Composicao familiar com parentesco relativo ao responsavel",
-      "Blocos de condicoes (habitacionais, educacionais, saude, trabalho)",
-      "Busca por NIS, CPF, nome — resultados em milissegundos",
+      "Prontuário único por família, sem duplicidade entre unidades",
+      "Composição familiar com vulnerabilidades e condições de vida",
+      "Identificação automática de renda e de programas federais",
     ],
   },
   {
@@ -138,32 +140,69 @@ export const funcionalidadesContent: {
     icon: ClipboardList,
     title: "Atendimento e acompanhamento",
     items: [
-      "Registro de atendimentos individuais e em grupo",
-      "Acompanhamento PAIF, PAEFI e servicos de convivencia",
-      "Plano de acompanhamento com metas por familia",
-      "Encaminhamentos para a rede intersetorial",
+      "Registro ágil de atendimentos individuais e em grupo",
+      "Encaminhamentos à rede com contrarreferência automática",
+      "Planos de acompanhamento com metas e prazos por família",
+    ],
+  },
+  {
+    id: "protecao-especial",
+    icon: HeartHandshake,
+    title: "Proteção Social Especial (CREAS)",
+    items: [
+      "Histórico de medidas socioeducativas por adolescente",
+      "Plano Individual de Atendimento com metas e prazos",
+      "Visão integrada com a proteção social básica",
     ],
   },
   {
     id: "beneficios",
     icon: Gift,
-    title: "Beneficios eventuais",
+    title: "Benefícios eventuais e SCFV",
     items: [
-      "Concessao e registro de beneficios (cesta basica, auxilio-natalidade, etc.)",
-      "Historico de concessoes por familia",
-      "Atividades coletivas com lista de presenca",
-      "Relatorio de beneficios concedidos por periodo",
+      "Concessão de benefícios com fluxo auditado de ponta a ponta",
+      "Controle de estoque e histórico por família",
+      "Acompanhamento de frequência das atividades do SCFV",
     ],
   },
   {
     id: "vigilancia",
     icon: BarChart3,
-    title: "Vigilancia socioassistencial",
+    title: "Vigilância socioassistencial e relatórios",
     items: [
-      "Painel de indicadores por territorio e unidade",
-      "Cruzamento de dados de atendimento e perfil familiar",
-      "Identificacao de areas com maior incidencia de violacoes",
-      "Exportacao de dados para analise externa",
+      "Dashboards por território, unidade e período",
+      "Diagnóstico socioterritorial de vulnerabilidades",
+      "Relatórios gerenciais prontos para órgãos de controle",
+    ],
+  },
+  {
+    id: "comunicacao",
+    icon: CalendarCheck2,
+    title: "Comunicação e agenda",
+    items: [
+      "Agendamentos com lembrete automático por WhatsApp e e-mail",
+      "Autenticação de documentos por QR Code",
+      "Assinatura eletrônica de declarações e termos",
+    ],
+  },
+  {
+    id: "seguranca-acesso",
+    icon: Lock,
+    title: "Segurança, acesso e conformidade",
+    items: [
+      "Login via gov.br com perfis de acesso por módulo",
+      "Sigilo técnico: informação sensível só para quem precisa",
+      "Alinhado à NOB/SUAS e à Tipificação Nacional dos Serviços",
+    ],
+  },
+  {
+    id: "integracoes",
+    icon: Link2,
+    title: "Integrações externas",
+    items: [
+      "Importação direta da base do CadÚnico",
+      "Atualização automática de benefícios federais",
+      "Integração com sistemas da prefeitura e OSCs parceiras",
     ],
   },
 ]
@@ -176,17 +215,17 @@ export const screenshotsContent: { src: string; alt: string; label: string }[] =
   {
     src: "",
     alt: "Dashboard SEIVA",
-    label: "Visao geral do municipio",
+    label: "Visão geral do município",
   },
   {
     src: "",
-    alt: "Prontuario Familiar",
-    label: "Prontuario familiar unificado",
+    alt: "Prontuário Familiar",
+    label: "Prontuário familiar unificado",
   },
   {
     src: "",
     alt: "Registro de Atendimento",
-    label: "Registro agil de atendimento",
+    label: "Registro ágil de atendimento",
   },
   {
     src: "",
@@ -206,39 +245,39 @@ export const diferenciaisContent: {
 }[] = [
   {
     icon: Users,
-    title: "Usuarios ilimitados",
+    title: "Usuários ilimitados",
     description:
-      "Nao cobramos por cadeira. Cadastre quantos tecnicos, coordenadores e gestores forem necessarios — cada um com seu perfil de acesso.",
+      "Não cobramos por cadeira. Cadastre quantos técnicos, coordenadores e gestores forem necessários — cada um com seu perfil de acesso.",
   },
   {
     icon: Zap,
     title: "Offline-ready",
     description:
-      "Funciona sem internet. Os dados sao cacheados localmente e sincronizados quando a conexao voltar — ideal para CRAS em areas rurais e visitas domiciliares.",
+      "Funciona sem internet. Os dados são cacheados localmente e sincronizados quando a conexão voltar — ideal para CRAS em áreas rurais e visitas domiciliares.",
   },
   {
     icon: Database,
     title: "Multi-tenant isolado",
     description:
-      "Cada municipio tem seu proprio banco de dados. Seus dados nao se misturam com os de outro ente — requisito de sigilo e conformidade LGPD.",
+      "Cada município tem seu próprio banco de dados. Seus dados não se misturam com os de outro ente — requisito de sigilo e conformidade LGPD.",
   },
   {
     icon: FileText,
-    title: "RMA e evolucao automatizada",
+    title: "RMA e evolução automatizada",
     description:
-      "Relatorio Mensal de Atendimento gerado com um clique. Evolucao do prontuario registrada automaticamente a cada atendimento.",
+      "Relatório Mensal de Atendimento gerado com um clique. Evolução do prontuário registrada automaticamente a cada atendimento.",
   },
   {
     icon: Globe,
     title: "APIs abertas",
     description:
-      "Integre o SEIVA com o sistema de protocolo, portais da transparencia e outras ferramentas da prefeitura. API REST documentada com Swagger.",
+      "Integre o SEIVA com o sistema de protocolo, portais da transparência e outras ferramentas da prefeitura. API REST documentada com Swagger.",
   },
   {
     icon: ArrowRight,
     title: "Portabilidade total",
     description:
-      "Seus dados sao seus. Exporte prontuarios, atendimentos e relatorios em CSV, JSON ou PDF. Nao prendemos seus dados — voce pode sair quando quiser.",
+      "Seus dados são seus. Exporte prontuários, atendimentos e relatórios em CSV, JSON ou PDF. Não prendemos seus dados — você pode sair quando quiser.",
   },
 ]
 
@@ -253,29 +292,61 @@ export const stackContent: {
 }[] = [
   {
     icon: Shield,
-    title: "LGPD por padrao",
+    title: "LGPD por padrão",
     description:
-      "Dados sensiveis protegidos com criptografia em repouso e em transito. Controle de acesso granular com trilha de auditoria em toda mutacao.",
+      "Dados sensíveis protegidos com criptografia em repouso e em trânsito. Controle de acesso granular com trilha de auditoria em toda mutação.",
   },
   {
     icon: Database,
     title: "Banco isolado",
     description:
-      "PostgreSQL dedicado por municipio. Backups diarios, replicacao e recuperacao em minutos. Zero compartilhamento de dados entre entes.",
+      "PostgreSQL dedicado por município. Backups diários, replicação e recuperação em minutos. Zero compartilhamento de dados entre entes.",
   },
   {
     icon: Fingerprint,
-    title: "Autenticacao robusta",
+    title: "Autenticação robusta",
     description:
-      "Login com JWT escopado por tenant. Bloqueio por tentativas, recuperacao de senha e troca de unidade sem novo login.",
+      "Login com JWT escopado por tenant. Bloqueio por tentativas, recuperação de senha e troca de unidade sem novo login.",
   },
   {
     icon: History,
     title: "Auditoria completa",
     description:
-      "Toda mutacao registra quem fez, quando e o que mudou. Soft-delete universal — nada se apaga, tudo fica rastreavel.",
+      "Toda mutação registra quem fez, quando e o que mudou. Soft-delete universal — nada se apaga, tudo fica rastreável.",
   },
 ]
+
+// ═══════════════════════════════════════════════════════════════
+// Sobre (significado da marca)
+// ═══════════════════════════════════════════════════════════════
+
+export interface SobrePalavra {
+  texto: string
+  destaque: boolean
+}
+
+export const sobreContent: {
+  eyebrow: string
+  title: string
+  palavras: SobrePalavra[]
+  paragrafos: string[]
+} = {
+  eyebrow: "Sobre o SEIVA",
+  title: "Um nome que carrega a proposta",
+  palavras: [
+    { texto: "Sistema", destaque: true },
+    { texto: "Eletrônico", destaque: true },
+    { texto: "de", destaque: false },
+    { texto: "Informação", destaque: true },
+    { texto: "para", destaque: false },
+    { texto: "Vigilância", destaque: true },
+    { texto: "Assistencial", destaque: true },
+  ],
+  paragrafos: [
+    "O SEIVA nasce da rotina do CRAS e do CREAS: cada atendimento registrado, cada prontuário atualizado e cada RMA fechado no sistema gera dado — e dado organizado vira informação de vigilância socioassistencial.",
+    "É essa informação que liga a operação do dia a dia à decisão da gestão: identificar territórios com maior incidência de vulnerabilidade, priorizar unidades e orientar a política pública com evidência, não com planilha solta.",
+  ],
+}
 
 // ═══════════════════════════════════════════════════════════════
 // FAQ
@@ -300,19 +371,19 @@ export const contatoContent = {
   bullets: [
     {
       icon: CheckCircle2,
-      text: "Demonstracao guiada e gratuita, sem compromisso",
+      text: "Demonstração guiada e gratuita, sem compromisso",
     },
     {
       icon: Clock,
-      text: "Resposta em ate 24 horas uteis",
+      text: "Resposta em até 24 horas úteis",
     },
     {
       icon: Shield,
-      text: "Seus dados nao serao compartilhados",
+      text: "Seus dados não serão compartilhados",
     },
     {
       icon: Zap,
-      text: "Proposta personalizada conforme o porte do municipio",
+      text: "Proposta personalizada conforme o porte do município",
     },
   ],
 }

@@ -23,10 +23,10 @@ export function Contato({
   bullets,
 }: ContatoProps) {
   return (
-    <section id={id} className="max-w-6xl mx-auto px-4 py-20 md:py-28">
+    <section className="max-w-6xl mx-auto px-4 py-20 md:py-28">
       <div className="grid md:grid-cols-2 gap-12 md:gap-16 items-start">
         {/* Left column */}
-        <div>
+        <div id={id}>
           <Eyebrow>{eyebrow}</Eyebrow>
           <h2 className="text-h2 font-bold mb-4 text-ink">{title}</h2>
           <p className="text-lead text-ink-2 mb-8">{intro}</p>
