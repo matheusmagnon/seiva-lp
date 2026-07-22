@@ -99,9 +99,12 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Section anchor offset (sticky header) */
+/* Section anchor offset (sticky header) — os ids de âncora ficam no wrapper
+   do título (eyebrow+h2), não na section, então o offset precisa cobrir a
+   altura do header sticky (h-16 = 64px + borda ≈ 65px) mais um respiro
+   pequeno para o título não colar no header. */
 :where(section, article, div)[id] {
-  scroll-margin-top: 5rem;
+  scroll-margin-top: 4.5rem;
 }
 
 /* Headings: font weight variations, tight leading, balanced text */

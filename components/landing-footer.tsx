@@ -19,6 +19,9 @@ export function LandingFooter() {
               (SUAS). Multi-tenant com banco isolado, offline-ready e
               sigilo LGPD.
             </p>
+            <p className="text-caption text-ink-3 mt-2">
+              Sistema Eletrônico de Informação para Vigilância Assistencial
+            </p>
           </div>
 
           <nav aria-label="Produto">

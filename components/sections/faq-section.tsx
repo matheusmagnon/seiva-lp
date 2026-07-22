@@ -16,12 +16,9 @@ export function FaqSection({
   items: FaqItem[]
 }) {
   return (
-    <section
-      id={id}
-      className="max-w-6xl mx-auto my-10 md:my-14 px-6 md:px-10 py-16 md:py-20 bg-[#F3F5F9] rounded-[2rem]"
-    >
+    <section className="max-w-6xl mx-auto my-10 md:my-14 px-6 md:px-10 py-16 md:py-20 bg-[#F3F5F9] rounded-[2rem]">
       <div className="flex flex-col md:flex-row gap-10 md:gap-16">
-        <div className="md:w-1/3 md:sticky md:top-24 md:self-start">
+        <div id={id} className="md:w-1/3 md:sticky md:top-24 md:self-start">
           <Eyebrow>{eyebrow}</Eyebrow>
           <h2 className="text-h2 font-bold mb-4 text-ink">{title}</h2>
           <p className="text-body text-ink-2">{intro}</p>

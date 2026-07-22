@@ -18,7 +18,7 @@ export const FAQ: FaqItem[] = [
   },
   {
     q: "O SEIVA gera o RMA automaticamente?",
-    a: "Sim. O módulo RMA consolida os atendimentos do mês, aplica as regras de contagem do CadSUAS e gera o relatório mensal com um clique. O sistema já registra todos os atendimentos com os campos necessários para a geração automatizada.",
+    a: "Sim. O módulo RMA consolida os atendimentos do mês, aplica as regras de contagem definidas pela Resolução CIT que regula o RMA e gera o relatório mensal com um clique. O sistema já registra todos os atendimentos com os campos necessários para a geração automatizada.",
   },
   {
     q: "Preciso instalar alguma coisa?",
@@ -34,7 +34,7 @@ export const FAQ: FaqItem[] = [
   },
   {
     q: "Quanto custa o SEIVA para prefeituras?",
-    a: "O valor e proporcional ao porte do municipio, baseado na populacao IBGE. Veja a secao de precos nesta pagina para as faixas de referencia. Toda proposta e personalizada conforme o escopo contratado. Entre em contato para receber uma demonstracao e uma proposta para o seu municipio.",
+    a: "O valor e proporcional ao porte do municipio, baseado na populacao IBGE. Toda proposta e personalizada conforme o escopo contratado. Entre em contato para receber uma demonstracao e uma proposta para o seu municipio.",
   },
   {
     q: "Como funciona o suporte?",

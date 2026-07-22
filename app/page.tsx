@@ -7,6 +7,7 @@ import { Funcionalidades } from "@/components/sections/funcionalidades"
 
 import { Diferenciais } from "@/components/sections/diferenciais"
 import { Stack } from "@/components/sections/stack"
+import { Sobre } from "@/components/sections/sobre"
 import { FaqSection } from "@/components/sections/faq-section"
 import { Contato } from "@/components/sections/contato"
 import { WhatsAppButton } from "@/components/whatsapp-button"
@@ -18,6 +19,7 @@ import {
   funcionalidadesContent,
   diferenciaisContent,
   stackContent,
+  sobreContent,
   faqContent,
   contatoContent,
 } from "@/content/landing/home"
@@ -74,6 +76,20 @@ export default function LandingPage() {
           title="Dúvidas frequentes"
           intro="Respostas objetivas sobre o SEIVA, o modelo SaaS, a segurança dos dados e o processo de implantação."
           items={faqContent}
+        />
+
+        {/*
+          Posição escolhida deliberadamente: depois de Funcionalidades/Diferenciais/Stack
+          e da FAQ, e antes do Contato. Até aqui o visitante já viu o que o SEIVA faz e
+          por que confiar nele — o significado do nome funciona como um fechamento
+          conceitual ("é isso que estamos entregando") logo antes do convite para a ação,
+          em vez de interromper a dramatização da dor logo após o hero.
+        */}
+        <Sobre
+          eyebrow={sobreContent.eyebrow}
+          title={sobreContent.title}
+          palavras={sobreContent.palavras}
+          paragrafos={sobreContent.paragrafos}
         />
 
         <Contato

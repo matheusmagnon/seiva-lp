@@ -16,11 +16,8 @@ interface ParaQuemProps {
 
 export function ParaQuem({ eyebrow, title, intro, personas }: ParaQuemProps) {
   return (
-    <section
-      id="para-quem"
-      className="max-w-6xl mx-auto px-4 py-20 md:py-28"
-    >
-      <div className="text-center mb-14">
+    <section className="max-w-6xl mx-auto px-4 py-20 md:py-28">
+      <div id="para-quem" className="text-center mb-14">
         <div className="flex justify-center">
           <Eyebrow>{eyebrow}</Eyebrow>
         </div>
