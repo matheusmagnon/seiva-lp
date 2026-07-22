@@ -7,7 +7,7 @@ para prefeituras (SUAS) e clínicas.
 
 A LP segue a **Direção F** ("produto calmo") do sistema SEIVA:
 
-- **Tipografia:** Manrope (single family, via next/font/google)
+- **Tipografia:** Work Sans (single family, via next/font/google)
 - **Cor primária:** #4763B8 (brand blue)
 - **Superfícies:** fundo Cinza-Nuvem (#F3F5F9), cards brancos, sidebar Cinza-Geada (#EBEEF4)
 - **Cantos:** generosos (10px)
@@ -36,7 +36,7 @@ Componentes reutilizados (com adaptação de tokens) de:
 
 **Diferenças deliberadas desta LP:**
 - Marca independente (não está sob Terceiro Setor Tech)
-- Fonte Manrope (não Public Sans + Bricolage)
+- Fonte Work Sans (não Public Sans + Bricolage)
 - Cantos generosos e botões com border-radius 10px (não rounded-full nem rounded-md)
 - Single theme claro (sem dark mode)
 - Duas audiências no mesmo site (prefeituras + clínicas) com tabs

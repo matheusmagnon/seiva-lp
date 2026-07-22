@@ -11,6 +11,7 @@ import { FaqSection } from "@/components/sections/faq-section"
 import { Contato } from "@/components/sections/contato"
 import { WhatsAppButton } from "@/components/whatsapp-button"
 import { CookieConsent } from "@/components/cookie-consent"
+import { faqSchema } from "@/lib/faq"
 import {
   doresContent,
   personasContent,
@@ -24,6 +25,11 @@ import {
 export default function LandingPage() {
   return (
     <div className="flex flex-col min-h-screen bg-white">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+
       <LandingHeader />
 
       <main id="main" className="flex-grow">

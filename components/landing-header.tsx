@@ -2,6 +2,7 @@
 
 import Link from "next/link"
 import Image from "next/image"
+import { usePathname } from "next/navigation"
 import { Menu, X } from "lucide-react"
 import { useState } from "react"
 
@@ -11,11 +12,18 @@ const NAV_LINKS: NavItem[] = [
   { href: "#funcionalidades", label: "Funcionalidades" },
   { href: "#para-quem", label: "Para quem" },
   { href: "#diferenciais", label: "Diferenciais" },
+  { href: "/blog", label: "Blog" },
 ]
 
 export function LandingHeader() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const pathname = usePathname()
   const close = () => setMobileMenuOpen(false)
+
+  // Âncoras da home (#funcionalidades etc.) só funcionam na própria home.
+  // Fora da home (ex.: /blog), prefixamos com "/" para voltar antes de rolar.
+  const resolveHref = (href: string) =>
+    href.startsWith("#") && pathname !== "/" ? `/${href}` : href
 
   return (
     <header className="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-[#E6EAF0]">
@@ -35,14 +43,14 @@ export function LandingHeader() {
             {NAV_LINKS.map((link) => (
               <Link
                 key={link.href}
-                href={link.href}
+                href={resolveHref(link.href)}
                 className="inline-flex items-center min-h-[40px] px-3.5 rounded-[10px] text-sm font-medium text-ink-2 hover:text-ink hover:bg-[#EBEEF4] transition-colors"
               >
                 {link.label}
               </Link>
             ))}
             <Link
-              href="#contato"
+              href={resolveHref("#contato")}
               className="ml-2 inline-flex items-center min-h-[44px] px-5 rounded-[10px] bg-brand text-white text-sm font-semibold hover:bg-brand-dark transition-colors shadow-[0_1px_2px_rgba(30,40,60,0.05)]"
             >
               Solicitar demonstração
@@ -69,7 +77,7 @@ export function LandingHeader() {
             {NAV_LINKS.map((link) => (
               <Link
                 key={link.href}
-                href={link.href}
+                href={resolveHref(link.href)}
                 onClick={close}
                 className="flex items-center min-h-[44px] px-4 rounded-[10px] text-sm font-medium text-ink-2 hover:text-ink hover:bg-[#EBEEF4] transition-colors"
               >
@@ -77,7 +85,7 @@ export function LandingHeader() {
               </Link>
             ))}
             <Link
-              href="#contato"
+              href={resolveHref("#contato")}
               onClick={close}
               className="flex items-center justify-center min-h-[48px] bg-brand text-white px-4 rounded-[10px] text-sm font-semibold hover:bg-brand-dark transition-colors w-full mt-2"
             >
